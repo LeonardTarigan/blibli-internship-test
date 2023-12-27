@@ -2,6 +2,7 @@
 import NavBar from './components/NavBar.vue'
 import FooterComponent from './components/FooterComponent.vue'
 import ProductCard from './components/ProductCard.vue'
+import ScrollToTop from './components/ScrollToTop.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import ProductCard from './components/ProductCard.vue'
     </section>
   </main>
   <FooterComponent />
+  <ScrollToTop />
 </template>
 
 <style scoped>

@@ -3,7 +3,11 @@
   --section-gap: 160px;
 
   --blibli-blue: #0095da;
+  --blibli-blue-light: #2aa8e3;
   --blibli-gray: #d9d9d9;
+  --blibli-orange: #f3782e;
+  --blibli-red: #f04f54;
+  --blibli-red-light: #f9b9bc;
 }
 
 *,

@@ -64,4 +64,6 @@
    
    d. `git commit -m <commit_message>` : used to save the changes in staging area to the local repository, we can use the `--amend` flag to combine current staged changes with the previous commit without creating new commit
    
-   e. `git push` : used to push the commited changes to the remote repository
+   e. `git push` : used to push the commited changes to the remote repository, we can use `git push -u origin <branch_name>` to push new local branch to remote repository
+   f. `git merge <target_branch>` : used to merge current branch with target branch
+   b. `git rebase <base_branch>` : used to reposition the base of the current commit line to the latest commit at base branch

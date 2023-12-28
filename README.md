@@ -42,7 +42,7 @@
     }
 
     .animate-infinite {
-      animation-iteration-count: infinitr; /* Animation will play infinitely */
+      animation-iteration-count: infinite; /* Animation will play infinitely */
     }
     ```
    

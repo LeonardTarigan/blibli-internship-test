@@ -17,10 +17,14 @@
 
 <style scoped>
 .card {
-  border: 1px solid gray;
+  border: 1px solid rgb(215, 215, 215);
   border-radius: 10px;
   width: 132px;
   overflow: hidden;
+  flex-shrink: 0;
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .img-container {

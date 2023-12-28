@@ -10,17 +10,19 @@ const scrollToTop = () => {
 </script>
 
 <template>
-  <div @click="scrollToTop" class="btn">
+  <button @click="scrollToTop">
     <IconArrowUp />
-  </div>
+  </button>
 </template>
 
 <style scoped>
-.btn {
+button {
   position: fixed;
-  bottom: 2rem;
+  z-index: 50;
   right: 1.5rem;
+  bottom: 2rem;
   width: 2.5rem;
+  border: none;
   aspect-ratio: 1/1;
   border-radius: 99px;
   background-color: white;

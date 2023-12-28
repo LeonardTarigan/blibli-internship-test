@@ -11,7 +11,8 @@ export default {
     toggleCollapse() {
       this.isCollapsed = !this.isCollapsed
     }
-  }
+  },
+  components: { IconArrowDown }
 }
 </script>
 
@@ -19,15 +20,18 @@ export default {
   <footer>
     <div class="collapse-container">
       <p v-show="!isCollapsed">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo omnis voluptas beatae
-        quas ipsa! Dolorum recusandae saepe ab aliquid sit voluptate officiis, officia at non
-        veritatis reprehenderit beatae nihil? Beatae culpa cum assumenda. Distinctio magnam vitae
-        harum odit doloribus aut, dignissimos, iste qui atque tenetur praesentium. Quam, at
-        sapiente.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit et sit hic ullam
+        perferendis ratione minima sunt sapiente vero obcaecati explicabo accusamus earum rem
+        possimus expedita illum culpa adipisci quas, recusandae enim fuga distinctio asperiores
+        quam! Delectus nemo tempora, illum at quibusdam eaque nulla minus eos provident similique.
+        Dolorum non, voluptatem qui aut assumenda temporibus similique ex. Vero dignissimos sed
+        repellendus nesciunt harum sint aliquam temporibus blanditiis minima tempore, hic quibusdam
+        magnam, incidunt officiis doloribus expedita recusandae, tenetur fugiat dolor mollitia minus
+        praesentium suscipit consectetur. Mollitia dolores ipsum minima esse!
       </p>
       <button @click="toggleCollapse">
         <span>{{ isCollapsed ? 'Show All' : 'Collapse All' }}</span>
-        <IconArrowDown />
+        <IconArrowDown class="icon" :class="{ 'rotate-up': !isCollapsed }" />
       </button>
     </div>
     <p class="copyright">c 2022 PT Global Digital Niaga</p>
@@ -73,6 +77,14 @@ footer {
 
 .btn-icon {
   width: 1rem;
+}
+
+.icon {
+  transition: all 150ms;
+}
+
+.rotate-up {
+  transform: rotate(180deg);
 }
 
 .copyright {

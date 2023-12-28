@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="img-container">
-      <img src="../assets/shoes.png" alt="Shoes" />
+      <img src="../assets/shoes.png" alt="Shoes" loading="lazy" />
     </div>
     <div class="content">
       <h3>NIKE AJ 1 Retro High White University Blue Black</h3>
